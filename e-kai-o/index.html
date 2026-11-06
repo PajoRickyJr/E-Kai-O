@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-KAI-O</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Carlito:wght@400;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<!-- Flags that JS is on, so the scroll-reveal styles apply before first paint.
+     If scripts are disabled this never runs and all content stays visible. -->
+<script>document.documentElement.classList.add('reveal-ready');</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand-logo" href="#top" data-site-logo aria-label="E-KAI-O home">
+      <img src="images/logo.png" width="495" height="323" alt="E-KAI-O Electrical and Electronics Solutions">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="hero" id="top">
+  <div class="corner" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="copy">
+      <p class="eyebrow" data-site="eyebrow">Electrical &amp; electronic servicing</p>
+      <h1>Need a <b>fast, reliable,</b> and <b>convenient</b> solution for your <span class="plate">electrical and electronic needs?</span></h1>
+      <p class="lede" data-site="lede">Repair, installation and maintenance for homes and businesses, handled by one team.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact" data-site="ctaPrimary">Request a service</a>
+        <a class="btn ghost" href="#services" data-site="ctaSecondary">View our services</a>
+      </div>
+    </div>
+
+    <div class="art">
+      <svg viewBox="0 0 520 540" role="img" aria-label="A gear with a lightning bolt, circuit traces and power transmission towers">
+        <defs>
+          <g id="pylon">
+            <path d="M-8 0 L-46 300 M8 0 L46 300"/>
+            <path d="M-34 30 H34 M-15.6 60 H15.6 M-24.5 130 H24.5 M-33.3 200 H33.3"/>
+            <path d="M-15.6 60 L24.5 130 M15.6 60 L-24.5 130 M-24.5 130 L33.3 200 M24.5 130 L-33.3 200 M-33.3 200 L46 300 M33.3 200 L-46 300"/>
+          </g>
+        </defs>
+
+        <g class="pylon">
+          <use href="#pylon" transform="translate(410 150)"/>
+          <use href="#pylon" transform="translate(478 300) scale(0.7)"/>
+        </g>
+
+        <g class="trace">
+          <path d="M300 250 L340 210 H400 V110"/>
+          <path d="M336 360 H436 L466 390 V440"/>
+          <path d="M230 205 V120 H300"/>
+        </g>
+
+        <g>
+          <circle class="ring" cx="400" cy="110" r="10"/>
+          <circle class="node" cx="400" cy="110" r="7"/>
+          <circle class="ring r2" cx="466" cy="440" r="10"/>
+          <circle class="node" cx="466" cy="440" r="7"/>
+          <circle class="ring r3" cx="300" cy="120" r="10"/>
+          <circle class="node" cx="300" cy="120" r="7"/>
+        </g>
+
+        <g transform="translate(190 350)">
+          <circle class="gear-teeth" r="136" pathLength="120" stroke-width="26" stroke-dasharray="5 5" stroke-dashoffset="2.5"/>
+          <circle class="gear-fill" r="124"/>
+          <circle class="gear-ring" r="98" stroke-width="3"/>
+          <polygon class="bolt" transform="scale(1.15)" points="10,-72 -36,10 -6,10 -16,72 38,-20 8,-20"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</main>
+
+<!-- ==========================================================================
+     PROBLEM SECTION
+     Photo placeholders: to add a real photo, put an <img> inside the matching
+     <figure class="photo"> and delete its <figcaption>. Example:
+       <figure class="photo"><img src="images/step-1.jpg" alt="Customer searching for a technician on a phone"></figure>
+     ========================================================================== -->
+<section class="problem" id="problem" aria-labelledby="problem-title">
+  <div class="wrap problem-grid">
+
+    <div class="worry-panel">
+      <div class="worries">
+        <figure class="photo" data-slot="worried-customers">
+          <img src="images/worried-customers.jfif" alt="Group of worried customers unsure who to trust for a technical service">
+        </figure>
+        <!-- <ul class="bubbles">
+          <li>Who can I trust<span class="q">?</span></li>
+          <li>Is the technician qualified<span class="q">?</span></li>
+          <li>Are they available near me<span class="q">?</span></li>
+          <li>Will it be affordable<span class="q">?</span></li>
+          <li>How much is the service<span class="q">?</span></li>
+          <li>Do they have good reviews<span class="q">?</span></li>
+        </ul> -->
+      </div>
+      <div class="panel-copy">
+        <h2 id="problem-title">&ldquo;Who can I trust?&rdquo;</h2>
+        <p>Customers may struggle to find a technician who is available, trustworthy, qualified, affordable, responsive, and near their location.</p>
+      </div>
+    </div>
+
+    <ol class="steps" aria-label="What customers go through when they need a technician">
+      <li class="step">
+        <span class="num" aria-hidden="true">1</span>
+        <div class="step-card">
+          <h3>Search</h3>
+          <figure class="photo" data-slot="step-1">
+            <img src="images/step-1.jfif" alt="Customer searching &ldquo;electrician near me&rdquo; on a phone">
+          </figure>
+          <p>The customer searches online, asks friends, or checks social media to find a technician.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="num" aria-hidden="true">2</span>
+        <div class="step-card">
+          <h3>Ask around</h3>
+          <figure class="photo" data-slot="step-2">
+            <img src="images/step-2.jfif" alt="Two people comparing technicians on a phone">
+          </figure>
+          <p>The customer contacts several technicians to ask for availability, price, and qualifications.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="num" aria-hidden="true">3</span>
+        <div class="step-card">
+          <h3>Wait</h3>
+          <figure class="photo" data-slot="step-3">
+            <img src="images/step-3.jfif" alt="Customer waiting, with a wall clock behind">
+          </figure>
+          <p>The customer waits for a response, but some technicians take time to reply or become unavailable.</p>
+        </div>
+      </li>
+      <li class="step bad">
+        <span class="num" aria-hidden="true">4</span>
+        <div class="step-card">
+          <h3>Uncertain</h3>
+          <figure class="photo" data-slot="step-4">
+            <img src="images/step-4.jfif" alt="Technician at an aircon unit, customer watching">
+          </figure>
+          <p>Even after finding someone, the customer may still be uncertain about the technician&rsquo;s skills, reliability, and the final cost.</p>
+        </div>
+      </li>
+    </ol>
+
+  </div>
+</section>
+
+<section class="promise circuit-bg" id="promise">
+  <div class="wrap promise-grid">
+    <div class="promise-label">
+      <p class="eyebrow">Our promise</p>
+      <svg viewBox="0 0 140 28" aria-hidden="true">
+        <path class="trace" d="M2 20 H96 L110 8 H122"/>
+        <circle class="node" cx="130" cy="8" r="6"/>
+      </svg>
+    </div>
+    <blockquote class="promise-quote">
+      <p><b>Rest assured</b>, you are never alone when it comes to your electrical and electronic concerns. We are here to help you find solutions, because behind every problem is an opportunity to make things work better, safer, and smarter.</p>
+    </blockquote>
+  </div>
+</section>
+
+<section class="about" id="about" aria-labelledby="about-title">
+  <div class="about-corner" aria-hidden="true"></div>
+  <svg class="about-pylon" viewBox="-60 0 120 300" aria-hidden="true"><g class="pylon"><use href="#pylon"/></g></svg>
+  <div class="wrap about-inner">
+    <h2 class="plate-title" id="about-title"><span>About the company</span></h2>
+    <p class="about-statement"><b class="co">E-KAI-O</b> is a proposed technology-enabled startup that provides accessible, reliable, and convenient electrical, electronics, and smart-home services to customers.</p>
+    <div class="about-tags">
+      <div>
+        <p class="tag-label">We provide</p>
+        <ul class="tags">
+          <li>Electrical</li>
+          <li>Electronics</li>
+          <li>Smart-home</li>
+        </ul>
+      </div>
+      <div>
+        <p class="tag-label">Services that are</p>
+        <ul class="tags">
+          <li>Accessible</li>
+          <li>Reliable</li>
+          <li>Convenient</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     SOLUTION / APP / SUSTAINABILITY / BUSINESS THESIS / TARGET MARKET
+     Every <figure class="photo"> is a placeholder. To add a real image, put an
+     <img src="images/name.jpg" alt="..."> inside it and delete the <figcaption>.
+     ========================================================================== -->
+<section class="solution" id="solution" aria-labelledby="solution-title">
+  <div class="wrap sec">
+    <h2 class="plate-title" id="solution-title"><span>The solution</span></h2>
+    <p class="lead">The application address this problem through an integrated mobile and web-based service application that connects households with qualified technicians.</p>
+    <p class="features-intro">Customers can use the application to:</p>
+    <ul class="features">
+        <li>Request services</li>
+        <li>Describe problems</li>
+        <li>Upload photos or videos</li>
+        <li>Select preferred schedules</li>
+        <li>Receive quotations</li>
+        <li>Monitor service requests</li>
+        <li>Communicate with technicians</li>
+        <li>Provide ratings and feedback</li>
+    </ul>
+  </div>
+</section>
+
+<section class="app circuit-bg" id="app" aria-labelledby="app-title">
+  <div class="wrap app-grid">
+    <!-- Web app placeholder: put an <img src="images/web-app.png" alt="..."> inside the
+         <figure class="photo lap-screen"> and delete its <figcaption>. -->
+    <div class="devices">
+      <div class="laptop">
+        <figure class="photo lap-screen" data-slot="web-screen">
+          <figcaption><strong>Photo placeholder</strong><span>Web app screenshot (PC and tablet view)</span></figcaption>
+        </figure>
+        <div class="lap-base" aria-hidden="true"></div>
+        <p class="dev-label">Web app &middot; PC and tablet</p>
+      </div>
+      <div class="phone-wrap">
+        <figure class="photo phone" data-slot="app-screen">
+          <img src="images/app-splash.png" width="200" height="385" alt="E-KAI-O app opening screen with the logo and a Get Started button">
+        </figure>
+        <p class="dev-label">Mobile app</p>
+      </div>
+    </div>
+    <div class="app-copy">
+      <h2 id="app-title">Your Home Your Solution <span class="hl">One App Away</span></h2>
+      <p>Connecting households with trusted technical solutions through accessible digital technology</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services" aria-labelledby="services-title">
+  <div class="wrap sec">
+    <h2 class="plate-title" id="services-title"><span>Services</span></h2>
+    <div class="svc-search" hidden>
+      <label class="sr-only" for="service-search">What service do you need?</label>
+      <input id="service-search" type="search" placeholder="What service do you need?" autocomplete="off">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.5" y1="15.5" x2="21" y2="21"/></g></svg>
+    </div>
+    <ul class="services-grid" id="service-list">
+      <li class="svc-tile">
+        <span class="svc-icon"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><polygon points="18,3 7,18 15,18 13,29 25,13 17,13" fill="currentColor" stroke="none"/></svg></span>
+        <span class="svc-name">Electrical Installation</span>
+      </li>
+      <li class="svc-tile">
+        <span class="svc-icon"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="23" cy="9" r="4.5"/><line x1="7" y1="26" x2="19.5" y2="12.5"/><line x1="7" y1="7" x2="21" y2="21"/></g><line x1="21.5" y1="21.5" x2="26" y2="26" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span>
+        <span class="svc-name">Repair &amp; Troubleshooting</span>
+      </li>
+      <li class="svc-tile">
+        <span class="svc-icon"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 28 C7 18 22 21 22 13"/><path d="M17 4 v4 M23 4 v4"/><path d="M16 8 h8 v3 a4 4 0 0 1 -8 0 z"/></g></svg></span>
+        <span class="svc-name">Wiring &amp; Rewiring</span>
+      </li>
+      <li class="svc-tile">
+        <span class="svc-icon"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="20" height="24" rx="3"/><circle cx="16" cy="18" r="6"/><line x1="10" y1="8.5" x2="14" y2="8.5"/></g><circle cx="21.5" cy="8.5" r="1.4" fill="currentColor"/></svg></span>
+        <span class="svc-name">Appliance Repair</span>
+      </li>
+      <li class="svc-tile">
+        <span class="svc-icon"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3 a8 8 0 0 0 -5 14 c1 1 1 3 1 4 h8 c0 -1 0 -3 1 -4 a8 8 0 0 0 -5 -14 z"/><path d="M12.5 25 h7 M13.5 28.5 h5"/></g></svg></span>
+        <span class="svc-name">Lighting Installation</span>
+      </li>
+      <li class="svc-tile" data-always>
+        <span class="svc-icon"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="7" cy="16" r="2.6" fill="currentColor"/><circle cx="16" cy="16" r="2.6" fill="currentColor"/><circle cx="25" cy="16" r="2.6" fill="currentColor"/></svg></span>
+        <span class="svc-name">Others</span>
+      </li>
+    </ul>
+    <p class="svc-empty" id="service-empty" role="status" hidden>No match yet. Choose Others if you don&rsquo;t see your service.</p>
+  </div>
+</section>
+
+<section class="sdg" id="sustainability" aria-labelledby="sdg-title">
+  <div class="wrap sec">
+    <h2 class="plate-title" id="sdg-title"><span>Sustainability aligned with national goals</span></h2>
+    <ul class="sdg-grid">
+      <li class="sdg-card">
+        <figure class="photo on-light sdg-art" data-slot="sdg-environment"><figcaption><strong>Photo placeholder</strong><span>Green home with a leaf and plug</span></figcaption></figure>
+        <div class="sdg-body">
+          <h3>Environmental Sustainability</h3>
+          <p>Energy-efficient homes for a cleaner, greener tomorrow.</p>
+          <ul class="sdg-list" aria-label="Related Sustainable Development Goals">
+            <li><span class="sdg-no">SDG 7</span><span>Affordable and Clean Energy</span></li>
+            <li><span class="sdg-no">SDG 12</span><span>Responsible Consumption and Production</span></li>
+          </ul>
+        </div>
+      </li>
+      <li class="sdg-card">
+        <figure class="photo on-light sdg-art" data-slot="sdg-economy"><figcaption><strong>Photo placeholder</strong><span>Technician with gear and growth arrow</span></figcaption></figure>
+        <div class="sdg-body">
+          <h3>Inclusive Economic Opportunities</h3>
+          <p>Empowering skilled technicians and creating more opportunities for local communities.</p>
+          <ul class="sdg-list" aria-label="Related Sustainable Development Goals">
+            <li><span class="sdg-no">SDG 8</span><span>Decent Work and Economic Growth</span></li>
+          </ul>
+        </div>
+      </li>
+      <li class="sdg-card">
+        <figure class="photo on-light sdg-art" data-slot="sdg-digital"><figcaption><strong>Photo placeholder</strong><span>Smartphone with home icon and touch</span></figcaption></figure>
+        <div class="sdg-body">
+          <h3>Digital Innovation and Accessibility</h3>
+          <p>Technology that makes technical solutions more accessible to every household.</p>
+          <ul class="sdg-list" aria-label="Related Sustainable Development Goals">
+            <li><span class="sdg-no">SDG 9</span><span>Industry, Innovation and Infrastructure</span></li>
+          </ul>
+        </div>
+      </li>
+      <li class="sdg-card">
+        <figure class="photo on-light sdg-art" data-slot="sdg-safe"><figcaption><strong>Photo placeholder</strong><span>Shield over a home and community</span></figcaption></figure>
+        <div class="sdg-body">
+          <h3>Safe and Resilient Communities</h3>
+          <p>Safer homes. Stronger families. More resilient communities.</p>
+          <ul class="sdg-list" aria-label="Related Sustainable Development Goals">
+            <li><span class="sdg-no">SDG 9</span><span>Industry, Innovation and Infrastructure</span></li>
+            <li><span class="sdg-no">SDG 11</span><span>Sustainable Cities and Communities</span></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="thesis circuit-bg" id="thesis" aria-labelledby="thesis-title">
+  <div class="corner" aria-hidden="true"></div>
+  <div class="wrap sec">
+    <h2 class="plate-title" id="thesis-title"><span>Business thesis</span></h2>
+    <p class="thesis-text"><b>E-KAI-O</b> will operate as a <b>service marketplace</b> and <b>technical service provider</b>. It will coordinate customer requests with qualified technicians and provide a digital platform for managing service appointments and documenting completed work.</p>
+  </div>
+</section>
+
+<section class="market" id="market" aria-labelledby="market-title">
+  <div class="wrap sec">
+    <h2 class="plate-title" id="market-title"><span>Target market</span></h2>
+    <ul class="market-grid">
+      <li class="market-card">
+        <figure class="photo on-light market-art" data-slot="market-homeowners"><figcaption><strong>Photo placeholder</strong><span>Family in front of their house</span></figcaption></figure>
+        <div class="market-body">
+          <h3>Homeowners</h3>
+          <p>Families needing repairs, installations and maintenance.</p>
+        </div>
+      </li>
+      <li class="market-card">
+        <figure class="photo on-light market-art" data-slot="market-condos"><figcaption><strong>Photo placeholder</strong><span>Apartment or condo building</span></figcaption></figure>
+        <div class="market-body">
+          <h3>Apartments &amp; Condos</h3>
+          <p>Residents who need convenient technician access.</p>
+        </div>
+      </li>
+      <li class="market-card">
+        <figure class="photo on-light market-art" data-slot="market-boarding"><figcaption><strong>Photo placeholder</strong><span>Boarding house building</span></figcaption></figure>
+        <div class="market-body">
+          <h3>Boarding Houses</h3>
+          <p>Owners/operators managing repeated household issues.</p>
+        </div>
+      </li>
+      <li class="market-card">
+        <figure class="photo on-light market-art" data-slot="market-rental"><figcaption><strong>Photo placeholder</strong><span>House with a &ldquo;For Rent&rdquo; sign</span></figcaption></figure>
+        <div class="market-body">
+          <h3>Rental Properties</h3>
+          <p>Property owners needing responsive technical support.</p>
+        </div>
+      </li>
+      <li class="market-card">
+        <figure class="photo on-light market-art" data-slot="market-managers"><figcaption><strong>Photo placeholder</strong><span>Property manager with a clipboard</span></figcaption></figure>
+        <div class="market-body">
+          <h3>Small Property Managers</h3>
+          <p>Recurring maintenance coordination.</p>
+        </div>
+      </li>
+      <li class="market-card">
+        <figure class="photo on-light market-art" data-slot="market-business"><figcaption><strong>Photo placeholder</strong><span>Small shop with tools</span></figcaption></figure>
+        <div class="market-body">
+          <h3>Small Businesses</h3>
+          <p>Basic technical services where applicable.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
